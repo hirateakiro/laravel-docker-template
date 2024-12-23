@@ -10,6 +10,7 @@ services:
       - db
   db:
     image: mysql:8.0
+    platform: linux/amd64
     volumes:
       - db:/var/lib/mysql
     ports:
